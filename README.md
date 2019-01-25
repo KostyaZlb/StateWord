@@ -13,3 +13,5 @@ D - max value: 255 -> 8 bit -> mask: 0xFF.
 C - max value: 15 -> 4 bit -> mask: 0x0F.  
 E - value: 0 or 1 -> 1 bit -> mask: 0x01.  
 S - max value: 7 -> 3 bit -> mask: 0x07.  
+
+[Link online compiler project](https://onlinegdb.com/rkmFZ5u74).
