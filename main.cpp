@@ -4,9 +4,9 @@
 using namespace std;
 
 template < typename T > void
-printB (T data)
+void printB (T data)
 {
-  cout << pow (2, sizeof (data)) << endl;
+  //cout << pow (2, sizeof (data)) << endl;
   for (int i = pow (2, sizeof (data)); i >= 0; --i)
     {
       cout << ((data >> i) & 1);
