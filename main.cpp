@@ -18,14 +18,16 @@ int
 main ()
 {
   int i;
-
+  // pack state word
   i = ((unsigned short) 21 & 0xff) << 8;
   i |= ((unsigned short) 3 & 0x0f) << 4;
   i |= ((unsigned short) 1 & 0x01) << 3;
   i |= ((unsigned short) 4 & 0x07);
+  
   cout << "byte word: ";
   printB (i);
 
+  // unpack state word
   cout << ((i >> 8) & 0xff) << endl;
   cout << ((i >> 4) & 0x0f) << endl;
   cout << ((i >> 3) & 0x01) << endl;
