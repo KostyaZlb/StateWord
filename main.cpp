@@ -3,7 +3,7 @@
 
 using namespace std;
 
-template < typename T > void
+/*template < typename T > void
 void printB (T data)
 {
   //cout << pow (2, sizeof (data)) << endl;
@@ -12,10 +12,9 @@ void printB (T data)
       cout << ((data >> i) & 1);
     }
   cout << "\n";
-}
+}*/
 
-int
-main ()
+int main ()
 {
   int i;
   // pack state word
@@ -25,7 +24,7 @@ main ()
   i |= ((unsigned short) 4 & 0x07);
   
   cout << "byte word: ";
-  printB (i);
+  //printB (i);
 
   // unpack state word
   cout << ((i >> 8) & 0xff) << endl;
